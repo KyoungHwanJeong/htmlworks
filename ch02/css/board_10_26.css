@@ -1,0 +1,13 @@
+/* board.html에 연결 */
+table{
+    width: 500px;
+    height: 100px;
+    border: 1px solid #0000ff; /* 실선 */
+    text-align: center; /* 가운데 정렬 */
+}
+/* ', '를 그룹 선택자(',') 라고 한다 */
+th, td{
+    /* dotted - 점선 */
+    border: 1px dotted #0000ff; /* 점선 */
+
+}

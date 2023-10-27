@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>너비와 높이</title>
+    <style>
+        /* 브라우저에는 기본 margin이 8px이 설정되어 있음 
+            top, right, bottom, left에 각각 설정 됨. 시계방향으로 준다.
+        */
+        body{margin: 0;}      /* 기본적으로 브라우저는 마진이 8이다. body(부모)에 주면 전체 적용됨 */
+        .box1{
+            width: 150px;
+            background-color: orange; /* 배경색*/
+            margin-bottom: 10px;
+            font-size: 32px;            /* 글자의 크기가 높이가 된다 */
+            text-align: center;
+        }
+        .box2{
+
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">박스모델</div>
+    <div class="box2">박스모델</div>
+</body>
+</html>

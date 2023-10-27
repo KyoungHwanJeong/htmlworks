@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            /* display 속성 - block 요소를 수평으로 정렬할 때 사용 */
+            display: inline-block;
+        }
+        /* 수평 정렬 할 때-  왼쪽, 오른쪽 마진 값은 합쳐지지 않고 합산된다. 아래는 20 + 30 = 50의 값이 됨 */
+        #box1{background-color: red;
+            margin: 20px;}
+        #box2{background-color: green;
+            margin: 20px 30px;}
+        #box3{background-color: blue;
+            margin: 20px;}
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rgba 사용</title>
+    <style>
+        body{
+            background-color: black;    /* 배경색 */
+            color: white;               /* 글자색 */
+        }
+        /* rgb(255, 255, 255, 알파값) 알파값 1-불투명, 0-투명 */
+        /* id는 전부를 다 다르게 하고 싶을 때 쓴다(클래스는 똑같은 공통적인 부분(이름을 안바꿈)) */
+        #text1{color: rgba(255, 255, 255, 1)}       /* 흰색 색상 */
+        #text2{color: rgba(255, 255, 255, 0.7)}
+        #text3{color: rgba(255, 255, 255, 0.5)}
+        #text4{color: rgba(255, 255, 255, 0.2)}
+    </style>
+</head>
+<body>
+    <h1 id="text1">HTML5+CSS3</h1>
+    <h1 id="text2">HTML5+CSS3</h1>
+    <h1 id="text3">HTML5+CSS3</h1>
+    <h1 id="text4">HTML5+CSS3</h1>
+</body>
+</html>
