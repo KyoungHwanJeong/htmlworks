@@ -1,0 +1,11 @@
+img{
+  width: 250px;
+  height: 220px;
+  /* background: #ccc; */
+  border: 1px solid #ccc;
+  background-size: cover;
+  margin: 16px;
+}
+#box:nth-of-type(1){
+  border: 2px solid #f00;
+}

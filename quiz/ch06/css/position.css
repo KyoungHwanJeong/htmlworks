@@ -1,0 +1,27 @@
+/* <img src="images/bg.jpg" alt="빌딩" no-repeat> */
+*{margin: 0;}
+#contents{
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+  /* 이미지가 기준이 됨 */
+  position: relative;
+  padding: 0;
+  border: 10px solid #ccc;
+}
+h1{
+  /* h1의 기본마진을 0px로 초기화함 */
+  margin: 0;
+  font-size: 100px;
+  color: white;
+  /* 원하는 위치로 배치 */
+  position: absolute;
+  bottom: 130px;
+  right: 70px;
+  /* 텍스트에 그림자 주기 */
+  text-shadow: 2px 2px 1px #222;
+  /* 텍스트를 가운데 정렬하기 */
+  text-align: center;
+}

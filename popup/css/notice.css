@@ -1,0 +1,24 @@
+#wrap{
+  width: 250px;
+  height: 300px;
+  top: 100;
+  right: 200;
+  border: 1px solid #ccc;
+
+  margin: 0;
+  background: rgb(177, 48, 155);
+  padding: 0;
+}
+h1{
+  font-style: italic;
+  padding: 16px;
+  font-weight: bold;
+}
+h3{
+  padding: 0 24px;
+  color: blue;
+  font-weight: bold;
+}
+ul li{
+  margin: 10px 16px;
+}
