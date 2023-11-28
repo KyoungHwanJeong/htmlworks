@@ -1,0 +1,49 @@
+/* float-layout.html의 스타일 */
+*{
+    margin:0; 
+    padding:0;
+    /* padding이나 border가
+        적용안되게 하려면 */
+    box-sizing: border-box;
+}
+#container{
+    width: 1000px;
+    margin: 0 auto; /* 레이아웃을 가운데 정렬한다 */
+}
+h1{
+    color: blue; 
+    /* 왼쪽 여백 10px */
+    padding: 10px 20px;
+}
+header{
+    /* container가 1000px이므로
+    1000px를 주면 더 커진다
+    998+2(테두리)으로 계산한다 */
+    width: 998px;
+    height: 100px;
+    border: 1px solid #333;
+    /* padding: 10px; */ /* 헤더가 20px늘어난다 */
+}
+section{
+    width: 660px;
+    height: 600px;
+    border: 1px solid #333;
+    /* section을 왼쪽으로 */
+    float: left;
+    background: skyblue;
+}
+aside{
+    width: 336px; /* 강의에는 320px로 했음 */
+    height: 600px;
+    border: 1px solid #333;
+    float: right;
+    background: greenyellow;
+}
+footer{
+    /* clear: both; 주위로 글자가 양쪽에 
+    붙는 것을 취소한다 */
+    clear: both;
+    width: 998px;
+    height: 100px;
+    border: 1px solid #333;
+}

@@ -1,0 +1,40 @@
+/* child.css */
+#container{
+  width: 960px;
+  margin: 0 auto;
+}
+.contents{
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+/* 모든 자식 요소들 중에서 첫 번째 자식 요소 */
+/* contents:first-child 로 붙여쓰면 전체가 다 바뀐다 */
+.contents :first-child{ /* :nth-child(1) */
+  color: red;
+}
+/* 2번째 자식을 선택해서 노란색 배경주기 */
+/* .contents :nth-child(2){
+  background-color: yellow;
+} */
+/* 모든 자식 요소중 n번째 자식 요소 */
+/* n=0을 대입하고 */
+/* 2n이므로 2, 4, 6, 8 번째 요소를 선택한다 */
+.contents :nth-child(2n){
+  background-color: #0f0;
+}
+/* .contents :last-child{
+  background-color: greenyellow;
+} */
+
+/* p:nth-of-type(): p태그 중에서 2번째 선택한다 */
+.contents p:nth-of-type(2){
+  color: blue;
+}
+
+/* "본문 내용2"를 녹색으로 스타일 하기 */
+.contents h2:nth-of-type(2){
+  color:green;
+  font-style: italic;
+}

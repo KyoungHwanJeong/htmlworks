@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>트랜지션 속도 곡선 지정</title>
+  <style>
+    #ex div{
+      width: 100px;
+      height: 50px;
+      background-color: #006aff;
+      color: #fff;
+      margin: 10px;
+      padding: 5px;
+      border-radius: 5px;
+      text-align: center;
+      float: left;
+    }
+
+    /* 속도가 일정함 linear */
+    #ex .linear{transition: all 5s;}
+    #ex .linear:hover{height: 200px;}
+   
+    /* 점점 빨라지다가 마지막에는 천천히 끝남 ease */
+    #ex .ease{transition: all 5s ease;}
+    #ex .ease:hover{height: 200px;}
+
+    /* 느리게 시작하고 빨리 끝난다 ease-in */
+    #ex .ease-in{transition: all 5s ease-in;}
+    #ex .ease-in:hover{height: 200px;}
+
+    /* 빨리 시작하고 느리게 끝난다 ease-out */
+    #ex .ease-out{transition: all 5s ease-out;}
+    #ex .ease-out:hover{height: 200px;}
+
+    /* 느리게 시작하고 느리게 끝난다 ease-in-out */
+    #ex .ease-in-out{transition: all 5s ease-out;}
+    #ex .ease-in-out:hover{height: 200px;}
+  </style>
+</head>
+<body>
+  <div id="ex">
+    <div class="linear">linear</div>
+    <div class="ease">ease</div>
+    <div class="ease-in">ease-in</div>
+    <div class="ease-out">ease-out</div>
+    <div class="ease-in-out">ease-in-out</div>
+  </div>
+</body>
+</html>

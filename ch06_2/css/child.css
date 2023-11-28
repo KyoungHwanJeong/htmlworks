@@ -1,0 +1,28 @@
+/* child.css */
+#container{
+  width: 960px;
+  margin: 0 auto;
+}
+.contents{
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.contents :first-child{ /* :nth-child(1) */
+  color: blue;
+}
+.contents :nth-child(2n){
+  background-color: yellow;
+}
+/* .contents :last-child{
+  background-color: greenyellow;
+} */
+/* p:nth-of-type(): p 태그에서 2번째만 선택 */
+.contents p:nth-of-type(2){
+  color: red;
+}
+/* 본문 내용2의 색상을 녹색으로 */
+.contents h2:nth-of-type(2){
+  color: green;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>button 태그의 onclick 속성</title>
+  <!-- 자바 스크립트 태그 사용 -->
+  <!-- 새로 실행 될 때 물어보는거, 알림 -->
+  <script>
+    alert("안녕하세요!")
+  </script>
+</head>
+<body>
+  <!-- alert() : 버튼이 1개 나옴, 알림, 경고창 -->
+  <!-- <p>
+    <button type="button" onclick="alert('hello~')">클릭</button>
+  </p> -->
+  <p>
+    <!-- onclick="alert() : Java 함수 -->
+    <!-- 바깥에 " " 쌍 따옴표이면 안에는 ' ' 홑 따옴표 -->
+    <button type="button" onclick="alert('아이디를 입력해주세요')">클릭</button>
+  </p>
+  <!-- confirm() : 버튼이 2개 나옴, 확인/취소 창 -->
+  <p>
+    <!-- onclick="confirm() : Java 함수 -->
+    <!-- 이때는 type를 생략해도 된다 -->
+    <button onclick="confirm('정말로 삭제하시겠습니까?')">삭제</button>
+  </p>
+  <!-- window.open() : 클릭 하면 해당 사이트가 열린다 -->
+  <p>
+    <!-- onclick="window.open() : Java 함수 -->
+    <button onclick="window.open('https://www.naver.com')">네이버 가기</button>
+  </p>
+  <p>
+    <!-- onclick="window.open() : Java 함수 -->
+    <button onclick="window.open('https://www.naver.com', '네이버(제목)', 'width=200, height=300, top=150 left=200')">
+      네이버 공지창</button>
+  </p>
+</body>
+</html>

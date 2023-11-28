@@ -1,0 +1,39 @@
+/* navi.css */
+*{margin: 0; padding: 0;}
+.wrap{width: 960px; margin: 0 auto;}
+nav{
+  height: 80px;
+  /* text-align: center; :글자 가운데 정렬하기 */
+  text-align: center;
+}
+nav ul{
+  /* list-style: none; :리스트 앞에 * 제거 */
+  list-style: none;
+  /* border-bottom: 2px solid #ccc;
+    :밑줄 만들기 */
+  border-bottom: 2px solid #ccc;
+}
+nav ul li{
+  /* 수평 정렬 : inline-block */
+  /* inline-block: 가로로 정렬하기 */
+  display: inline-block;
+  /* line-height: 80px;
+    :세로로 가운데 정렬 하기 */
+  line-height: 80px;
+  /* left right만 20px 떨어뜨림 */
+  margin: 0 20px;
+}
+
+/* 링크에 대한 옵션과 페이지 방문을 했을 때의 옵션 */
+/* ul li a:link, a:visited = ul li a{} 와 같다 */
+ul li a:link, a:visited{
+  /* li에 있는 밑줄 없애기 */
+  text-decoration: none;
+  color: #222;
+  /* 글자 사이 간격 10px */
+  padding: 10px;
+}
+/* a:focus() 탭키가 가능해짐(탭키를 눌러서 동작한다) */
+ul li a:hover, a:focus{background: #222; color: rgb(235,234,234);}
+/* a:active -> 마우스로 클릭하여 동작한다 그때의 옵션 */
+ul li a:active{background-color: red;}

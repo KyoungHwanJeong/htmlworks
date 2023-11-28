@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메뉴 만들기</title>
+  <style>
+    *{
+      margin: 0 auto;
+      padding: 0;
+    }
+    nav{height: 80px; margin: 20px;}
+    ul{list-style: none;}
+    ul li{float: left;}
+    ul li a{
+      display: block;
+      /* a 에다 색상을 주는 방법2 : margin과 padding도 a 중심으로 줘야 한다 */
+      background-color: #ccc;
+      /* 밑줄 없애기 */
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+    /* a가 링크 됐거나 a를 방문 했을 때 */
+    ul li a:link, a:visited{
+      text-decoration: none;
+      color: #000;
+    }
+    ul li a:hover{
+      background-color: #222;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">메뉴1</a></li>
+      <li><a href="#">메뉴2</a></li>
+      <li><a href="#">메뉴3</a></li>
+      <li><a href="#">메뉴4</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* profile.css */
+@charset "utf-8";
+
+/* @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@600&family=Nanum+Gothic+Coding:wght@700&display=swap');
+*{margin:0; padding: 0; box-sizing: border-box;}
+#container{width: 100%; margin:0 auto;}
+
+/* header 영역 */
+header{width: 100%; height: 280px;}
+#logo{float:left; width: 15%; height: 60px; line-height: 60px; 
+  padding-left: 20px; background: black;}
+#logo h2{font-family: Merienda; color: #fff;}
+#logo a:link, a:visited{text-decoration: none;}
+nav{float:right; width: 85%; height: 60px; line-height: 60px; background: black; padding-left: 20px;}
+#main-nav{font-family: Nanum Gothic Coding; list-style: none; font-size: 0.9em; font-style: italic; font-weight: bold;}
+#main-nav li{display: inline-block; margin: 0 10px; line-height: 60px;}
+#main-nav li a:link, a:visited{text-decoration: none; color: #fff;}
+#main-nav li a:hover{color: blueviolet;}
+#main-pic img{width: 100%; height: 220px;}
+
+/* 본문 영역 */
+section{height: 330px; padding: 10px 3%;}
+section:nth-of-type(2n){background: rgb(245,245,245);}
+section h3{padding: 15px;}
+section p{line-height: 0.5; padding: 10px 0 10px 20px; font-size: 0.9em;}
+section .page-title{padding: 15px;}
+section .content .photo{display: none;}
+section .text ul{margin-left: 30px; list-style: none;}
+section .text .degree_major{margin-left: 50px;}
+section .text .degree_major li{padding: 5px; font-size: 0.9em;}
+section .text .degree_major li:first-child{color:greenyellow;}
+section #certi{padding-left: 20px;}
+section #certi li{margin: 15px;}
+section #certi li:first-child{color: blue;}
+
+section #skills li{text-decoration: none; color: rgb(100, 100, 250);
+              padding-left: 20px; margin: 15px;}
+section #skills li:hover{text-decoration: underline; color: rgb(100, 100, 250);}
+
+/* footer 영역 */
+footer{height: 100px; border-top: 2px solid #aaa;}
+#bottomMenu{margin: 10px 30px;}
+#bottomMenu ul{list-style: none;}
+#bottomMenu ul li{display: inline; padding: 0 10px;
+          border-right: 2px solid #ccc; font-size: 0.9em;}
+#bottomMenu ul li:last-child{border:none}
+#bottomMenu ul li a{text-decoration: none; color: firebrick;}
+#bottomMenu ul li a:hover{text-decoration: underline; color:firebrick;}
+
+/* 태블릿 기준 - 768px 이상 */
+@media screen and (min-width: 780px) {
+  header{width: 100%; height: 320px;}
+  #logo{float:left; width: 20%;}
+  #logo{padding-left: 30px;}
+  nav{float: right; width: 80%; height: 60px;}
+  #main-nav{padding-left: 70px;}
+  #main-nav li{margin: 0 30px;}
+  #main-pic img{width:100%; height: 260px;}
+  section{height: 400px; padding: 10px 5%;}
+  #who, #certificate{float:left; width: 50%; border:1px dotted #eee;}
+  #achieved{clear:both; height: 350px;}
+}
+
+/* pc 기준 - 996px 이상*/
+@media screen and (min-width: 1000px) {
+  #container{width: 1000px; margin:0 auto; border: 1px solid #eee}
+  header{height: 360px;}
+  #main-nav{padding-left: 100px;}
+  #main-nav li{margin: 0 40px;}
+  #main-pic img{height: 300px;}
+  section{height: 350px;}
+  .content .text .degree_major{margin-left: 300px;}
+  #who, #certificate, #achieved{width: 100%; padding: 10px 5%;}
+  #who .photo{float: left; display: block; margin: 5px 30px; }
+  #who .photo img{border-radius: 5px;}
+  #certificate .photo{float: right; display: block; margin: 5px 30px;}
+  #certificate .photo img{border-radius: 5px;}
+  #achieved .photo{float: left; display: block; margin: 5px 30px; }
+  #achieved .photo img{border-radius: 5px;}
+}

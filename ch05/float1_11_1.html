@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 속성</title>
+    <style>
+        div{
+            padding: 10px;
+            margin: 10px;
+            /* box1, box2, box3, box4를 순서대로 왼쪽으로 붙인다 */
+            float: left;
+        }
+        .box1{
+            /* background-color 로 안해도 color로 인식 */
+            background: #f0f;
+            /* 박스1을 왼쪽으로 붙이기(박스2는 오른쪽이 됨) */
+            /*float: left;*/    /* 박스1의 위치가 left가 되고 다음개체는 옆에 위치함 */
+        }
+        .box2{
+            /* background-color 로 안해도 color로 인식 */
+            background: #0f0;
+            /* 박스2를 박스3 왼쪽으로 붙이기(박스3는 오른쪽이 됨) */
+            /* float: left;  */
+        }
+        .box3{
+            /* background-color 로 안해도 color로 인식 */
+            background: #ff0;
+            /* 박스3를 박스4 왼쪽으로 붙이기(박스4는 오른쪽이 됨) */
+            /* float: left;  */
+        }
+        .box4{
+            /* background-color 로 안해도 color로 인식 */
+            background: #0ff;
+            /* 박스4를 오른쪽으로 붙이기(박스4는 오른쪽이 됨) */
+            /* float: right;  */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+</body>
+</html>

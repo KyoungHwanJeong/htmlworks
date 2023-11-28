@@ -1,0 +1,26 @@
+/* car.css */
+#wrap{width: 700px; margin: 0 auto;}
+/* 밑줄 추가하기 */
+nav{border-bottom: 1px solid black;}
+/* 목록 앞에 숫자 없애고 패딩 주기 */
+nav ol{list-style: none; padding-left: 0;}
+/* 수평배치하기 */
+nav ol li{display: inline-block;}
+/* 목록에 밑줄 없애기 */
+ol li a{text-decoration: none;}
+/* ">"를 주기 */
+/* ol li a::after{
+  content: ">";
+  color: #000;
+  padding: 0 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+} */
+
+ol li a::before{
+  content: ">";
+  color: #000;
+  padding: 0 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+}

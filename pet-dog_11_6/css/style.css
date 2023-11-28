@@ -1,0 +1,93 @@
+/* style.css */
+/* import는 항상 맨 위에 쓴다 */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@600&family=Nanum+Gothic+Coding:wght@700&display=swap');
+*{margin:0px; padding:0px;}
+/* 공통으로 밑줄과 색상 없애기 */
+a{text-decoration: none;}
+ul{list-style: none;}
+#wrap{width: 1200px; margin: 0 auto;}
+
+/* header 메뉴 */
+header{width: 100%; height: 100px; background: #0077cc;}
+#logo{float: left; width: 250px; line-height: 100px;}
+#logo h1{
+  font-family: Nanum Gothic Coding;
+  padding-left: 20px; color: greenyellow; font-style: italic;
+  
+}
+header nav{float: right; width: 900px; padding-top: 40px;}
+
+/* 주메뉴 */
+#topMenu{height: 60px; margin-left: 100px;}
+/* 자식 메뉴만 float: left; 적용하기 */
+#topMenu > li{float: left; position: relative;}
+#topMenu > li > a{
+  display: block;
+  color: #fff;
+  padding: 20px 40px;
+}
+#topMenu > li > a:hover{color: #000;}
+/* 서브메뉴 */
+#topMenu > li > ul{
+  display: none;
+  position: absolute;
+  width: 160px;
+  background: rgba(192, 252, 54, 0.6);
+}
+#topMenu > li:hover > ul{
+  display: block;
+  z-index: 10;
+}
+#topMenu > li > ul > li{
+  padding: 8px 0 8px 36px;
+}
+#topMenu > li > ul > li > a:hover{
+  font-size: 15px;
+  color: #000;
+}
+#topMenu > li > ul > li > a:hover{
+  color: #f00;
+}
+main{
+    height: 600px;
+    padding: 5px;
+    border: 5px solid #ccc;
+}
+main h1{margin: 10px 20px;}
+section{
+    float: left;
+    width: 31%; /* main 크기의 31% */
+    height: 520px;
+    border: 1px dotted #ccc;
+    margin: 5px;
+    padding: 5px;
+}
+section h3{
+    background: url(../images/dot.png) no-repeat;
+    background-position: 5px 20px; /* left(x) top(y) */
+    padding: 16px 24px;
+}
+section dl dt{font-weight: bold;}
+section dl dd{margin-bottom: 16px;}
+aside{
+    clear: both;
+    padding: 40px 20px 60px;
+    background: greenyellow;
+}
+aside img{
+    float: left;
+    margin: 0 150px 10px 40px;
+    border-radius: 10px;
+}
+aside h3{padding-left: 30px;}
+aside ul li{
+    margin: 10px 60px;
+}
+footer{
+    padding: 20px 10px;
+    background: #555;
+}
+footer p{
+    color: rgb(235, 234, 234);
+    text-align: center;
+}

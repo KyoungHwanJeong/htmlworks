@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform 속성(변형)</title>
+  <style>
+    /* transform 속성값
+      -rotate() : 회전
+      -translate() : 이동
+      -scale() : 크기 */
+      /* div{
+        width: 150px;
+        height: 80px;
+        background-color: #0f0;
+      } */
+      div.a{
+        width: 150px;
+        height: 80px;
+        background-color: #0f0;
+      }
+      div.b{
+        width: 150px;
+        height: 80px;
+        background-color: #0f0;
+
+      }
+      div.b:hover{
+        /* x축 방향으로 50px 만큼 이동한다 */
+        transform: translateX(50px);
+      }
+      div.c{
+        width: 150px;
+        height: 80px;
+        background-color: #0f0;
+
+      }
+      div.c:hover{
+        /* 음수이면 왼쪽으로 회전 양수이면 오른쪽으로 회전한다 */
+        /* 시계 방향으로 30도 회전 - deg(degree(회전 각도)) */
+
+        /* 음수이면 왼쪽으로 회전 양수이면 오른쪽으로 회전한다 */
+        /* 시계 방향으로 30도 회전 - deg(degree(회전 각도)) */
+        transform: rotate(30deg);
+      }
+      div.d{
+        width: 150px;
+        height: 80px;
+        background-color: #0f0;
+      }
+      div.d:hover{
+        /* y 축으로 1.5배 확대, 축소 */
+        /* transform: scaleY(1.5); */
+        /* transform: scaleY(0.5); */
+
+        /* x, y 양쪽 방향으로 확대 및 축소 */
+        transform: scale(1.5);
+        /* transform: scale(0.5); */
+      }
+      div.e{
+        width: 150px;
+        height: 80px;
+        background-color: #0f0;
+      }
+      div.e:hover{
+        /* x축 기준으로 박스를 30도 만큼 비튼다 */
+        transform: skewX(30deg);
+        /* transform: skewY(30deg); */
+      }
+      div.f{
+        width: 150px;
+        height: 80px;
+        background-color: #0f0;
+      }
+      div.f:hover{
+
+        transform: skewY(30deg);
+      }
+  </style>
+</head>
+<body>
+  <h2>변형전 개체</h2>
+  <div class="a">Hello world</div>
+
+  <h2>transform: translateX(50px)</h2>  
+  <div class="b">Hello world</div>  
+
+  <h2>transform: rotate(30deg)</h2>  
+  <div class="c">Hello world</div>  
+
+  <h2>transform: scaleY(1.5)</h2>  
+  <div class="d">Hello world</div>  
+
+  <h2>transform: skewX(30deg)</h2>  
+  <div class="e">Hello world</div>  
+
+  <h2>transform: skewY(30deg)</h2>  
+  <div class="f">Hello world</div>  
+</body>
+</html>

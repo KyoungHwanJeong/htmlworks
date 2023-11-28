@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반응형 웹 폰트 크기</title>
+  <style>
+    h1{
+      text-align: center;
+      /* 5 * 16 = 80px */
+      /* font-size: 5em; */
+
+      /* 브라우저 크기가 1000px 이면 
+        vw, vh 동일하게 적용된다 (5 * 1200)/100=60px */
+      /* vw : 브라우저 크기에 따라 폰트 크기가 달라진다 */
+      /* font-size: 5vw; */
+
+      /* vh : 브라우저의 높이에 따라 폰트 크기가 달라진다 */
+      font-size: 5vh;
+      }
+  </style>
+</head>
+<body>
+  <h1>안녕하세요</h1>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* dog.css */
+*{margin: 0px; padding: 0px;}
+#container{width: 1000px; margin: 0 auto;}
+/* header 스타일 */
+header{
+  width: 100%;
+  height: 80px; /* 80px로 하면 글씨가 잘린다 */
+  background: #069;
+}
+header #logo{
+  width: 30%; /* header 크기의 30% */
+  float: left;
+  /* line-height: 80px 화면 상단에서부터 거리 */
+  line-height: 80px;
+}
+#logo h1{
+  color: greenyellow;
+  padding-left: 20px;
+  font-style: italic;
+  font-family: Nanum Gothic Coding;
+  /* font-family: Merienda; */
+}
+header nav{width: 70%; float: right; line-height: 80px;}
+nav ul{list-style: none; margin-left: 150px;}
+nav ul li{float: left;}
+nav ul li a{
+  /* */
+  display: inline-block;
+  /* display: block; */
+  padding: 0 20px; /* margin: 0 20px; 마진이나 패딩 선택해서 쓴다 */
+  text-decoration: none;
+  color: #fff;
+}
+nav ul li a:hover{background: #2fb2fd;}
+section h1{padding: 20px;}

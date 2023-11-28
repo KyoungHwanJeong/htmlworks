@@ -1,0 +1,24 @@
+/* 상단 메뉴 만들기 */
+body{margin: 0;}
+ul{
+    list-style: none;
+    /* ul 태그의 마진(16px)을 0 px로 초기화 한다 */ 
+    margin: 0;}
+ul li{
+    /* 마진 속성 때문에 인라인이 안되므로 블럭을 시켜준다 */
+    /* inline은 적용 안됨. margin 속성이 추가되어서 안됨 */
+    display: inline-block;
+    margin: 16px;
+    border-top: 3px solid #222;
+    padding: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+}
+/* a에 호버를 주면 글자 크기에 대해 호버가 나온다 */
+ul li:hover{
+    background-color: #eee;
+}
+section h1{margin-left: 20px;}

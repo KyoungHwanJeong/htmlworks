@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>:checkd 속성</title>
+  <style>
+    form{width: 400px;}
+    /* 입력 창의 색상과 테두리 색상 */
+    input:disabled{
+      background-color: #ddd;
+      border: 1px solid #ccc;
+    }
+    /* 체크 되는 목록에 대한 레이블 속성 */
+    /* 옵션버튼이 체크되면 span 레이블 색상이 파랑색으로 바뀜 */
+    input:checked + span{
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <!-- disabled 속성 : 비활성화 한다 -->
+  <form action="" method="post">
+    <fieldset>
+      <legend>사용자 정보</legend>
+      <!-- 입력 창 만들기 disabled: 비활성화 -->
+      <label>이름<input type="text" disabled></label>
+    </fieldset>
+    <fieldset>
+      <legend>신청 과목</legend>
+      <p>이 달에 신청할 과목을 선택하세요</p>
+      <label><input type="radio" name="subject" value="speaking"><span>회화</span></label>
+      <label><input type="radio" name="subject" value="grammer"><span>문법</span></label>
+      <label><input type="radio" name="subject" value="writting"><span>작문</span></label>
+    </fieldset>
+  </form>
+</body>
+</html>
