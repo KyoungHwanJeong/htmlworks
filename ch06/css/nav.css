@@ -1,0 +1,35 @@
+*{
+  margin: 0; padding: 0;
+}
+.wrap{
+  width: 960px;
+  margin: 0 auto;
+}
+nav{
+  height: 80px;
+  /* 글자 가운데 */
+  text-align: center;
+}
+nav ul{
+  /* 목록 앞에 * 제거 */
+  list-style: none;
+  border-bottom: 2px solid #ccc;
+}
+nav ul li{
+  /* 수평 정렬 */
+  display: inline-block;
+  /* 가운데 맞춤 */
+  line-height: 80px;
+  margin: 0 20px;
+}
+
+ul li a:link, a:visited{ /* ul li a{}와 같다 */
+  /* 밑줄 없애기 */
+  text-decoration: none;
+  color: #222;
+  padding: 10px;
+}
+/* a:focus() 탭키가 가능해짐 */
+ul li a:hover, a:focus{background: #222;color: rgb(235,234,234);}
+/* a:active -> 마우스로 클릭하여 동작한다 */
+ul li a:active{background-color: red;}
